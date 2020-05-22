@@ -9,6 +9,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="demo_townhallFlow" doc:id="b0774b21-8180-4084-81e9-3d6f420e144f" >
 		<http:listener doc:name="Listener" doc:id="7134508b-4c15-4ac1-ac2b-4c6b4f2e50cb" config-ref="HTTP_Listener_config" path="/"/>
-		<set-payload value='#["mulesoft"]' doc:name="Set Payload" doc:id="8dbd69ae-7f6b-41dd-96bb-c0972fda72b4" />
+		<set-payload value='#["mulesofts"]' doc:name="Set Payload" doc:id="8dbd69ae-7f6b-41dd-96bb-c0972fda72b4" />
 	</flow>
 </mule>
