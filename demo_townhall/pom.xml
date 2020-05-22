@@ -20,14 +20,63 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
+			         <plugin>
+            <groupId>org.mule.tools.maven</groupId>
+            <artifactId>mule-maven-plugin</artifactId>
+            <version>${mule.maven.plugin.version}</version>
+            <extensions>true</extensions>
+            <configuration />
+         </plugin>
+         <plugin>
+                
+            <groupId>org.mule.tools.maven</groupId>
+                
+            <artifactId>mule-maven-plugin</artifactId>
+            <version>${mule.maven.plugin.version}</version>
+               
+    
+            <configuration>
+               <cloudHubDeployment>
+                          
+                  <muleVersion>${app.runtime}</muleVersion>
+                          
+        
+                  <applicationName>app-townhall</applicationName>
+                  <uri>https://anypoint.mulesoft.com</uri>
+                          
+                  <username>mouli15</username>
+                          
+                  <password>Mouli143@</password>
+                          
+                  <workerType>Micro</workerType>
+                          
+                  
+                          
+                  <environment>Sandbox</environment>
+                  <workers>1</workers>
+               </cloudHubDeployment>
+                   
+            </configuration>
+                
+            <executions>
+                       
+               <execution>
+                              
+                  <id>deploy</id>
+                              
+                  <phase>deploy</phase>
+                              
+                  <goals>
+                                     
+                     <goal>deploy</goal>
+                                 
+                  </goals>
+                          
+               </execution>
+                   
+            </executions>
+         </plugin>
+			
 		</plugins>
 	</build>
 
