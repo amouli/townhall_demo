@@ -13,7 +13,7 @@
 			<flow-ref doc:name="Flow-ref to demo_townhallFlow" doc:id="412abf7e-3ec8-426f-a16f-bae5186c4899" name="demo_townhallFlow"/>
 		</munit:execution>
 		<munit:validation >
-			<munit-tools:assert-equals doc:name="Assert equals" doc:id="9fa2476c-21cd-478d-9101-9bf9d50fba05" actual="#[payload]" expected='#["mulesoft"]'/>
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="9fa2476c-21cd-478d-9101-9bf9d50fba05" actual="#[payload]" expected='#["mulesoftss"]'/>
 		</munit:validation>
 	</munit:test>
 
